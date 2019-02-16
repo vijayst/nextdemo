@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "scripts": {
+    "start": "next",
+    "build": "next build && next export"
+  }
+}
