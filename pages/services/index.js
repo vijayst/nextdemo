@@ -1,26 +1,23 @@
 import Link from 'next/link';
-import Layout from '../../components/layout';
 import styles from '../../styles/services.module.css';
 import fs from 'fs';
 import { Converter } from 'showdown';
 
 export default function Services({ services }) {
     return (
-        <Layout>
-            <div>
-                <h1>Services</h1>
-                <p>View our service offerings:</p>
-                <ul className={styles.services}>
-                    {services.map((service) => (
-                        <li key={service.slug}>
-                            <Link href={`/services/${service.slug}`}>
-                                {service.title}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </Layout>
+        <div className="container">
+            <h1>Services</h1>
+            <p>View our service offerings:</p>
+            <ul className={styles.services}>
+                {services.map((service) => (
+                    <li key={service.slug}>
+                        <Link href={`/services/${service.slug}`}>
+                            {service.title}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
 

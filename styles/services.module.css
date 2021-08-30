@@ -1,14 +1,14 @@
-.services {
-    margin-top: 24px;
-    font-size: 16px;
+.services li {
+    padding: 4px;
 }
 
-.services a:link, .services a:visited {
-    color: rgba(0,0,0,.56);
+.services a:link,
+.services a:visited {
+    color: #ccc;
     text-decoration: none;
 }
 
 .services a:hover {
-    color: black;
     text-decoration: underline;
+    color: #fff;
 }

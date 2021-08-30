@@ -1,12 +1,13 @@
 import styles from './layout.module.css';
 import Link from 'next/link';
+import { Fragment } from 'react';
 
 export default function Layout(props) {
     return (
-        <div>
+        <Fragment>
             <header className={styles.header}>
                 <div className={styles.wrapper}>
-                    <h1>
+                    <h1 className={styles.title}>
                         <Link href="/">
                             <a className={styles.titleLink}>
                                 Vijay Consulting Services
@@ -30,6 +31,6 @@ export default function Layout(props) {
                 </div>
             </header>
             <main>{props.children}</main>
-        </div>
+        </Fragment>
     );
 }

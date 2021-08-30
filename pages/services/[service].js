@@ -1,5 +1,4 @@
 import { Converter } from 'showdown';
-import Layout from '../../components/layout';
 import fs from 'fs';
 
 export default function Service(props) {
@@ -8,10 +7,10 @@ export default function Service(props) {
         meta: { title },
     } = props;
     return (
-        <Layout>
+        <div className="container">
             <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
-        </Layout>
+        </div>
     );
 }
 
