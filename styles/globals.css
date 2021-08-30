@@ -11,6 +11,12 @@ body {
     max-width: 40rem;
 }
 
+@media screen and (max-width: 40em) {
+    .container {
+        padding-top: 7rem;
+    }
+}
+
 h1 {
     font-size: 2rem;
     color: #b5ffd9;
@@ -20,6 +26,17 @@ h2 {
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 40em) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
 p {
     color: #ccc;
+    font-size: 1rem;
 }
