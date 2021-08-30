@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import styles from '../../styles/services.module.css';
 import fs from 'fs';
 import { Converter } from 'showdown';
@@ -6,6 +7,9 @@ import { Converter } from 'showdown';
 export default function Services({ services }) {
     return (
         <div className="container">
+            <Head>
+                <title>Services</title>
+            </Head>
             <h1>Services</h1>
             <p>View our service offerings:</p>
             <ul className={styles.services}>

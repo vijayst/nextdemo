@@ -1,5 +1,6 @@
 import { Converter } from 'showdown';
 import fs from 'fs';
+import Head from 'next/head';
 
 export default function Service(props) {
     const {
@@ -8,6 +9,9 @@ export default function Service(props) {
     } = props;
     return (
         <div className="container">
+            <Head>
+                <title>{title}</title>
+            </Head>
             <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>

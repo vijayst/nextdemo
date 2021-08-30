@@ -8,6 +8,7 @@ some great features:
 -   Customise \_app.js for common Layout
 -   Dynamic routes
 -   Examples of getStaticProps() and getStaticPaths()
+-   Title for each page
 -   Static site generation
 
 *   The project is updated for NextJS 11.
