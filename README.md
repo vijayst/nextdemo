@@ -8,7 +8,7 @@ some great features:
 -   Customise \_app.js for common Layout
 -   Dynamic routes
 -   Examples of getStaticProps() and getStaticPaths()
--   Export next project
+-   Static site generation
 
 *   The project is updated for NextJS 11.
 *   [A blogpost explaining how everything was implemented](https://vijayt.com/post/static-website-using-nextjs-and-markdown/)

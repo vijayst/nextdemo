@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Layout from '../../components/layout';
-import styles from './index.module.css';
+import styles from '../../styles/services.module.css';
 import fs from 'fs';
 import { Converter } from 'showdown';
 
