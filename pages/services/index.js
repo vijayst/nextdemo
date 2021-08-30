@@ -12,7 +12,7 @@ export default function Services({ services }) {
                 <p>View our service offerings:</p>
                 <ul className={styles.services}>
                     {services.map((service) => (
-                        <li>
+                        <li key={service.slug}>
                             <Link href={`/services/${service.slug}`}>
                                 {service.title}
                             </Link>
