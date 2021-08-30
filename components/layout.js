@@ -1,4 +1,4 @@
-import styles from './layout.css';
+import styles from './layout.module.css';
 import Link from 'next/link';
 
 export default function Layout(props) {
@@ -16,18 +16,20 @@ export default function Layout(props) {
                     <div>
                         <ul className={styles.menu}>
                             <li>
-                                <Link href="/"><a>Home</a></Link>
+                                <Link href="/">
+                                    <a>Home</a>
+                                </Link>
                             </li>
                             <li>
-                                <Link href="/services"><a>Services</a></Link>
+                                <Link href="/services">
+                                    <a>Services</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </header>
-            <main>
-                {props.children}
-            </main>
+            <main>{props.children}</main>
         </div>
     );
 }

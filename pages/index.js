@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './index.css';
+import styles from './index.module.css';
 
 export default function Index() {
     return (
